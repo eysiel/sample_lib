@@ -1,0 +1,269 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #d5f2f2;
+    background-image: url(../image/cover.png);
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    background-color: rgba(90, 9, 21, 0.9);
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    
+}
+.search-tab .mag{
+    display: none;
+}
+.logo .lib{
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-left: 10px;
+    
+}
+.input-search{
+    border-radius: 5px;
+    border: 0;
+    font-size: 17px;
+    padding: 2px;
+}
+.genre{
+    border-radius: 5px;
+    border: 0;
+    font-size: 15px;
+    padding: 2px;
+}
+.search{
+    margin-right: 15px;
+    background-color: whitesmoke;
+    padding: 2px;
+}
+.search-tab{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.search-tab .burger{
+    display: none;
+}   
+.search-tab a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 15px;
+}
+.search-tab a:hover{
+    color: rgb(5, 47, 61);
+}
+.book-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    flex-wrap: wrap;
+}
+.book-container .card{
+    background-color: rgb(75, 73, 73);
+    width: 250px;
+    height: auto;
+    margin: 20px 10px;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+}
+.book-cover{
+    width: 100%;
+    height: 410px;
+    border-radius: 20px 20px 0 0;
+}
+.book-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    flex: 1;
+}
+.book-info h5, p{
+    padding: 0 10px;
+    text-align: center;
+}
+.book-info .read-more{
+    display: none;
+}
+.buttons{
+    display: flex;
+    width: 100%;
+    height: 60px;
+}
+.btn-cart{
+    background-color: rgb(5, 47, 61);
+    color: white;
+    text-decoration: none;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    font-size: smaller;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0 20px;
+
+}
+.btn-cart:hover{
+    color: rgb(90, 9, 21);
+}
+.btn-wishlist{
+    background-color: rgb(5, 47, 61);
+    color: white;
+    text-decoration: none;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    font-size: smaller;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn-wishlist:hover{
+    color: rgb(90, 9, 21);
+}
+.btn-buy{
+    background-color: rgb(90, 9, 21);
+    color: white;
+    text-decoration: none;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    font-size: smaller;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 20px 0;
+}
+.btn-buy:hover{
+    color: rgb(5, 47, 61);
+}
+.buttons i{
+    font-size: large;
+    margin-bottom: 5px;
+}
+.form{
+    display: block;
+    justify-content: center;
+    width: 30%;
+    height: 41vh;
+    background-color: rgba(5, 47, 61,0.9);
+    margin-left: 20px;
+    padding-left: 20px;
+}
+.checkout{
+    border: 1 solid black;
+}
+.checkout h1{
+    display: flex;
+
+    color: rgb(105, 31, 42);
+    margin-top: 100px;
+}
+.form-container label{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: large;
+    align-content: space-between;
+}
+.input-field{
+    width: 80%;
+    padding: 8px;
+}
+.loc{
+    display: block;
+    color: white;
+}
+.loc button{
+    background-color: rgb(95, 15, 27);
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    width: 90%;
+}
+@media (max-width: 718px){
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+    }
+    .book-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .book-container .card{
+        flex-direction: row;
+        height: auto;
+        width: 90%;
+    }
+    .book-cover{
+        height: auto;
+        width: 150px;
+        border-radius: 20px 0 0 20px;
+    }
+    .book-info{
+        background-color: rgb(75, 73, 73);
+        border-radius: 0 20px 20px 0;
+        flex: 1;
+    }
+    .buttons span{
+        display: none;
+    }
+    .btn-cart{
+        border-radius: 0;
+    }
+    .book-info .read-more{
+        display: inline;
+    }
+    .book-info span{
+        display: none;
+    }
+    .search-tab{
+        display: flex;
+    }
+    .search-tab span{
+        display: none;
+    }
+    .search-tab .mag{
+        display: flex;
+        font-size: 30px;
+        color: white;
+        margin-right: 10px
+    }
+    .search-tab .mag:hover{
+        color: rgb(5, 47, 61);
+    }
+    .search-tab span{
+        display: none;
+    }
+    .search-tab .burger{
+        display: flex;
+        font-size: 30px;
+        color: white;
+        align-items: flex-end;
+    }
+    .search-tab .burger:hover{
+        color: rgb(5, 47, 61);
+    }
+    .form{
+        width: 100%;
+    }
+    .input-field{
+        width: 85%;
+    }
+}

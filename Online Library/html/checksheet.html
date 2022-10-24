@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <script src="https://kit.fontawesome.com/46e210ee73.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+             <a class="lib" href="../index.html">Online Library</a>
+        </div>
+        <div class="search-tab">
+            <span>
+                <input type="search" placeholder="Search title or author" id="password" class="input-search">
+                <select name="genre" id="genre" class="genre">
+                <option>Choose genre</option>
+                <option>Romance</option>
+                <option>Horror</option>
+                <option>Dystopian</option>
+                <option>Mystery</option>
+                <option>Science Fiction</option>
+                </select>
+        
+                <button class="search">Search</button>
+            </span>
+            <span class="mag"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span>
+                <a href="../index.html">Home</a>
+                <a href="#">Catalog</a>
+                <a href="#">View Cart</a>
+                <a href="#">View Wishlist</a>
+            </span>
+            <span class="burger"><i class="fa-solid fa-bars"></i></span>        
+        </div>
+    </nav>
+    <div class="form">
+        <div class="checkout">
+            <h1>Checkout Form</h1>
+            <div class="form-container">
+                <form action="" method="">
+                    <div>
+                        <label for="firstname">Firstname:</label>
+                        <input type="text" placeholder="ex. Juan" id="firstname"
+                        class="input-field">
+                        <label for="lastname">Lastname:</label>
+                        <input type="text" placeholder="ex. Dela Cruz" id="lastname"
+                        class="input-field">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="text" placeholder="ex. jdelacruz@email.com" id="email"
+                        class="input-field">
+                    </div>
+                    <div>
+                        <label for="Contact">Contact Number:</label>
+                        <input type="number" placeholder="ex. 09XX XXX XXXX" id="firstname"
+                        class="input-field">
+                    </div>
+            </div>
+            <div class="loc">
+                    <label for="region"> Region:</label>
+                    <select name="region" id="region" class="region">
+                        <option value="1">region I</option>
+                        <option value="2">region II</option>
+                        <option value="3">region III</option>
+                        <option value="4">region IV</option>
+                        <option value="5">region V</option>
+                    </select>
+                    <br>
+                    <label for="payment">Payment Method</label>
+                    <div class="radio">
+                        <input type="radio" id="credit" name="pay_method" value="Credit">
+                        <label for="credit">Credit Card</label>
+            
+                        <input type="radio" id="cod" name="pay_method" value="COD">
+                        <label for="cod">Cash on Delivery</label>
+            
+                        <input type="radio" id="gcash" name="pay_method" value="GCash">
+                        <label for="gcash"> GCash</label>
+                    </div>
+                    <hr>
+                    <button>Place Order</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
